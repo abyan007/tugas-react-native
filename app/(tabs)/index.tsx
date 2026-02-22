@@ -18,9 +18,7 @@ export default function HomeScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
 
-      {/* ===================== */}
-      {/* LANGKAH 1 - CARD PROFILE */}
-      {/* ===================== */}
+      
       <View style={styles.profileCard}>
         <Image
           source={require('../../assets/images/img1.png')}
@@ -29,9 +27,7 @@ export default function HomeScreen() {
         <Text style={styles.profileTitle}>Profile Title</Text>
       </View>
 
-      {/* ===================== */}
-      {/* LANGKAH 2 - 2 BUTTON */}
-      {/* ===================== */}
+      
       <View style={styles.buttonRow}>
         <TouchableOpacity
           style={[styles.button, { backgroundColor: '#8e2de2' }]}
@@ -48,9 +44,7 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* ===================== */}
-      {/* LANGKAH 3 - 6 CARD GAMBAR */}
-      {/* ===================== */}
+      
       <View style={styles.gridContainer}>
         <Image source={require('../../assets/images/img2.png')} style={styles.gridImage} />
         <Image source={require('../../assets/images/img3.png')} style={styles.gridImage} />
@@ -60,9 +54,7 @@ export default function HomeScreen() {
         <Image source={require('../../assets/images/img7.png')} style={styles.gridImage} />
       </View>
 
-      {/* ===================== */}
-      {/* LANGKAH 4 - BUTTON 3 */}
-      {/* ===================== */}
+      
       <TouchableOpacity
         style={styles.bottomButton}
         onPress={() => handlePress('Button 3')}
@@ -81,7 +73,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
 
-  /* PROFILE CARD */
+  
   profileCard: {
     width: '100%',
     backgroundColor: '#ffffff',
@@ -104,7 +96,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
 
-  /* BUTTON ROW */
+  
   buttonRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -125,7 +117,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
 
-  /* GRID */
+
   gridContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -141,7 +133,7 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
 
-  /* BOTTOM BUTTON */
+
   bottomButton: {
     width: '100%',
     backgroundColor: '#4a90e2',
